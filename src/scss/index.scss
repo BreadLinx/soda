@@ -1,0 +1,40 @@
+// @import '../vendor/fonts/fonts.scss';
+@font-face {
+    src: url(../vendor/fonts/Inter/Bold/Inter-Bold.woff) format("woff"),
+         url(../vendor/fonts/Inter/Bold/Inter-Bold.woff2) format("woff2");
+    font-family: "Inter";
+    font-weight: 700;
+}
+
+@font-face {
+    src: url(../vendor/fonts/Inter/Semibold/Inter-SemiBold.woff) format("woff"),
+         url(../vendor/fonts/Inter/Semibold/Inter-SemiBold.woff2) format("woff2");
+    font-family: "Inter";
+    font-weight: 600;
+}
+
+@font-face {
+    src: url(../vendor/fonts/Inter/Medium/Inter-Medium.woff) format("woff"),
+         url(../vendor/fonts/Inter/Medium/Inter-Medium.woff2) format("woff2");
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+@font-face {
+    src: url(../vendor/fonts/Inter/Regular/Inter-Regular.woff) format("woff"),
+         url(../vendor/fonts/Inter/Regular/Inter-Regular.woff2) format("woff2");
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+@import './vendor/normalize';
+@import './components/variables/color';
+@import './components/variables/displays';
+@import './components/mixins/adaptation';
+
+@import './blocks/body/_body.scss';
+@import './blocks/page/_page.scss';
+@import './blocks/lead/lead';
+@import './blocks/fresh-line/fresh-line';
+@import './blocks/about/about';
+@import './blocks/description-card/description-card';

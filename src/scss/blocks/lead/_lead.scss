@@ -1,0 +1,230 @@
+.lead {
+    background-color: $firstElementsColor;
+    width: 100%;
+    min-height: 760px;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 100px;
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    @include tablet {
+        min-height: 886px;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 50px;
+    }
+
+    @include bigPhone {
+        justify-content: flex-start;
+        min-height: unset;
+    }
+
+    &__photo {
+        width: 783px;
+        max-width: 100%;
+        height: 600px;
+        margin-top: 110px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        background-image: url(../images/lead__photo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        z-index: 1;
+
+        @include desktop {
+            background-size: cover;
+        }
+
+        @include tablet {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            width: 668px;
+            height: 514px;
+        }
+
+        @media (max-width: 575px) {
+            margin-top: 196px;
+        }
+
+        @include bigPhone {
+            margin-top: 100px;
+            width: 87.5%;
+            aspect-ratio: 143 / 108;
+            height: initial;
+            background-size: contain;
+        }
+    }
+
+    &__photo-sticker {
+        width: 129px;
+        height: 124px;
+        background-image: url(../images/lead__photo-sticker.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate(10.05deg);
+        position: absolute;
+        right: -43px;
+        bottom: -26px;
+
+        @include desktop {
+            width: 95px;
+            height: 95px;
+            right: -20px;
+            bottom: -20px;
+        }
+
+        @include tablet {
+            width: 130px;
+            height: 130px;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        @include bigPhone {
+            width: 83.25px;
+            height: 80.47px;
+            bottom: -33px;
+            right: 12px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 171px;
+        justify-content: flex-end;
+        margin-bottom: 50px;
+
+        @include tablet {
+            flex-direction: row;
+            gap: 0;
+            justify-content: space-around;
+        }
+
+        @media (max-width: 575px) {
+            flex-direction: column;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        @include bigPhone {
+            margin-bottom: 20px;
+            width: 87.5%;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 457px;
+        z-index: 1;
+
+        @include tablet {
+            font-size: 30px;
+            line-height: 38px;
+            max-width: 407px;
+        }
+
+        @include smallPhone {
+            font-size: 20px;
+            line-height: 24px;
+            max-width: 200px;
+        }
+    }
+
+    &__button {
+        width: 163px;
+        height: 55px;
+        background-color: $fourthElementsColor;
+        color: $secondTextColor;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 31px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        line-height: 55px;
+        text-decoration: none;
+        letter-spacing: .3px;
+
+        @include smallPhone {
+            width: 152px;
+            height: 51px;
+            font-size: 16px;
+            line-height: 51px;
+        }
+    }
+
+    &__headline {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        color: $fourthElementsColor;
+        margin: 0;
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        z-index: 1;
+
+        @include bigPhone {
+            font-size: 20px;
+            top: 20px;
+            left: 20px;
+        }
+    }
+
+    &__circle {
+        width: 565px;
+        height: 565px;
+        background-color: rgba(53, 48, 255, .2);
+        position: absolute;
+        top: -160px;
+        right: -160px;
+        border-radius: 100%;
+
+        @include tablet {
+            display: none;
+            position: static;
+        }
+    }
+
+    &__small-circle {
+        width: 169px;
+        height: 169px;
+        background-image: url(../images/lead__small-circle.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+
+        @include tablet {
+            height: 128px;
+            width: 128px;
+            top: 40px;
+        }
+
+        @include tablet {
+            height: 94px;
+            width: 94px;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+    }
+}

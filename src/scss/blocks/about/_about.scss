@@ -1,0 +1,33 @@
+.about {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 120px 50px 50px 50px;
+
+    @include bigPhone {
+        padding: 50px 20px 20px 20px;
+    }
+
+    &__title {
+        color: $secondTextColor;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: .5px;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 120px;
+
+        @include bigPhone {
+            font-size: 30px;
+            line-height: 34px;
+            margin-bottom: 75px;
+        }
+        
+        @include smallPhone {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 50px;
+        }
+    }
+}
