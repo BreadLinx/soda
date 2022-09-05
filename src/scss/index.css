@@ -1,20 +1,20 @@
 @font-face {
-  src: url(../vendor/fonts/Inter/Bold/Inter-Bold.woff) format("woff"), url(../vendor/fonts/Inter/Bold/Inter-Bold.woff2) format("woff2");
+  src: url(./vendor/fonts/Inter/Bold/Inter-Bold.woff) format("woff"), url(./vendor/fonts/Inter/Bold/Inter-Bold.woff2) format("woff2");
   font-family: "Inter";
   font-weight: 700;
 }
 @font-face {
-  src: url(../vendor/fonts/Inter/Semibold/Inter-SemiBold.woff) format("woff"), url(../vendor/fonts/Inter/Semibold/Inter-SemiBold.woff2) format("woff2");
+  src: url(./vendor/fonts/Inter/Semibold/Inter-SemiBold.woff) format("woff"), url(./vendor/fonts/Inter/Semibold/Inter-SemiBold.woff2) format("woff2");
   font-family: "Inter";
   font-weight: 600;
 }
 @font-face {
-  src: url(../vendor/fonts/Inter/Medium/Inter-Medium.woff) format("woff"), url(../vendor/fonts/Inter/Medium/Inter-Medium.woff2) format("woff2");
+  src: url(./vendor/fonts/Inter/Medium/Inter-Medium.woff) format("woff"), url(./vendor/fonts/Inter/Medium/Inter-Medium.woff2) format("woff2");
   font-family: "Inter";
   font-weight: 500;
 }
 @font-face {
-  src: url(../vendor/fonts/Inter/Regular/Inter-Regular.woff) format("woff"), url(../vendor/fonts/Inter/Regular/Inter-Regular.woff2) format("woff2");
+  src: url(./vendor/fonts/Inter/Regular/Inter-Regular.woff) format("woff"), url(./vendor/fonts/Inter/Regular/Inter-Regular.woff2) format("woff2");
   font-family: "Inter";
   font-weight: 400;
 }
@@ -883,5 +883,139 @@ template {
     position: static;
     bottom: unset;
     left: unset;
+  }
+}
+
+.natural {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 525px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow-y: hidden;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .natural {
+    flex-direction: column;
+    height: 910px;
+    padding-top: 70px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 425px) {
+  .natural {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 467px;
+  }
+}
+@media (max-width: 375px) {
+  .natural {
+    height: 517px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .natural {
+    height: 467px;
+  }
+}
+.natural__title {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 67px;
+  letter-spacing: 0.3px;
+  color: #1E3264;
+  max-width: 460px;
+  margin-left: 154px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1280px) {
+  .natural__title {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .natural__title {
+    max-width: 550px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .natural__title {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .natural__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.natural__photo {
+  width: 430px;
+  aspect-ratio: 43/61;
+  background-image: url(../images/natural__photo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: -100px;
+  right: 180px;
+}
+@media screen and (max-width: 1280px) {
+  .natural__photo {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .natural__photo {
+    bottom: -90px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+@media screen and (max-width: 425px) {
+  .natural__photo {
+    width: 280px;
+    bottom: -58px;
+  }
+}
+.natural__photo-sticker {
+  width: 172px;
+  aspect-ratio: 1/1;
+  transform: rotate(-18.99deg);
+  background-image: url(../images/natural__photo-sticker.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 45px;
+  left: -106px;
+}
+@media (max-width: 675px) {
+  .natural__photo-sticker {
+    top: -30px;
+    left: -30px;
+  }
+}
+@media (max-width: 510px) {
+  .natural__photo-sticker {
+    top: -30px;
+    left: 0px;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .natural__photo-sticker {
+    width: 98.62px;
+    left: 7px;
+    top: 189px;
   }
 }/*# sourceMappingURL=index.css.map */

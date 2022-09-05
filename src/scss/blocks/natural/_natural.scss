@@ -1,0 +1,122 @@
+.natural {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 525px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @include smallDesktop {
+        flex-direction: column;
+        height: 910px;
+        padding-top: 70px;
+        box-sizing: border-box;
+    }
+
+    @include bigPhone {
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 467px;
+    }
+
+    @media (max-width: 375px) {
+        height: 517px;
+    }
+
+    @include smallPhone {
+        height: 467px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 67px;
+        letter-spacing: .3px;
+        color: $secondTextColor;
+        max-width: 460px;
+        margin-left: 154px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        @include desktop {
+            margin-left: 0;
+        }
+
+        @include smallDesktop {
+            max-width: 550px;
+            text-align: center;
+        }
+
+        @include bigPhone {
+            font-size: 30px;
+            line-height: 34px;
+            max-width: 100%;
+        }
+
+        @include smallPhone {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__photo {
+        width: 430px;
+        aspect-ratio: 43 / 61;
+        background-image: url(../images/natural__photo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: -100px;
+        right: 180px;
+
+        @include desktop {
+            right: 50px;
+        }
+
+        @include smallDesktop {
+            bottom: -90px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        @include bigPhone {
+            width: 280px;
+            bottom: -58px;
+        }
+    }
+
+    &__photo-sticker {
+        width: 172px;
+        aspect-ratio: 1 / 1;
+        transform: rotate(-18.99deg);
+        background-image: url(../images/natural__photo-sticker.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 45px;
+        left: -106px;
+
+        @media (max-width: 675px) {
+            top: -30px;
+            left: -30px;
+        }
+
+        @media (max-width: 510px) {
+            top: -30px;
+            left: 0px;
+            width: 120px;
+        }
+
+        @include bigPhone {
+            width: 98.62px;
+            left: 7px;
+            top: 189px;
+        }
+    }
+}
