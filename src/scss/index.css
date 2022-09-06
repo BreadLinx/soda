@@ -1018,4 +1018,224 @@ template {
     left: 7px;
     top: 189px;
   }
+}
+
+.semples {
+  background-color: #CEF564;
+  padding: 60px calc(50% - 720px) 60px calc(50% - 720px);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 90px;
+}
+@media screen and (max-width: 768px) {
+  .semples {
+    flex-direction: column;
+    padding-bottom: 34px;
+    padding-left: 34px;
+    padding-right: 34px;
+    gap: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 530px) {
+  .semples {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .semples {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .semples {
+    padding: 20px 10px 10px 10px;
+    gap: 50px;
+  }
+}
+.semples__text-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 48px;
+  max-width: 457px;
+  margin-left: 150px;
+}
+@media screen and (max-width: 1280px) {
+  .semples__text-wrapper {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .semples__text-wrapper {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+}
+@media screen and (max-width: 320px) {
+  .semples__text-wrapper {
+    align-self: center;
+    gap: 20px;
+    max-width: 240px;
+  }
+}
+.semples__title {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 65px;
+  letter-spacing: 0.3px;
+  color: #1E3264;
+  margin: 0;
+}
+@media screen and (max-width: 425px) {
+  .semples__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .semples__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.semples__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.3px;
+  color: #1E3264;
+  margin: 0;
+}
+@media screen and (max-width: 320px) {
+  .semples__text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 24px 30px 30px 30px;
+  background-color: #016450;
+  width: 693px;
+  box-sizing: border-box;
+  margin-right: 50px;
+}
+@media screen and (max-width: 768px) {
+  .form {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form {
+    padding: 20px;
+  }
+}
+.form__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  margin: 0 0 50px 0;
+}
+@media screen and (max-width: 320px) {
+  .form__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}
+.form__inputs-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 13px;
+}
+@media screen and (max-width: 768px) {
+  .form__inputs-wrapper {
+    gap: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form__inputs-wrapper {
+    gap: 8px;
+  }
+}
+.form__input-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  width: calc(50% - 6.5px);
+}
+@media screen and (max-width: 768px) {
+  .form__input-wrapper {
+    width: 100%;
+  }
+}
+.form__input-wrapper:nth-of-type(3) {
+  width: 100%;
+}
+.form__label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+@media screen and (max-width: 320px) {
+  .form__label {
+    font-size: 14px;
+  }
+}
+.form__input {
+  border: 0;
+  padding: 0;
+  background-color: initial;
+  border-bottom: 2px solid #fff;
+  height: 46px;
+  outline: initial;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+@media screen and (max-width: 320px) {
+  .form__input {
+    height: 30px;
+  }
+}
+.form__button {
+  margin-top: 179px;
+  padding: 0;
+  border: 0;
+  width: 158px;
+  height: 55px;
+  background-color: #A27BFF;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 0.3px;
+  color: #fff;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .form__button {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form__button {
+    margin-top: 60px;
+    width: 100%;
+    height: 51px;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=index.css.map */
