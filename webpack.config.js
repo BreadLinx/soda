@@ -38,7 +38,7 @@ module.exports = {
           },
           {
             // применять это правило только к CSS-файлам
-            test: /\.(sa|sc|c)css$/,
+            test: /\.(sa|sc|c)ss$/,
             // при обработке этих файлов нужно использовать
             // MiniCssExtractPlugin.loader и css-loader
             use: [MiniCssExtractPlugin.loader, 

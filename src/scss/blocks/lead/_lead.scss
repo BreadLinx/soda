@@ -160,6 +160,8 @@
         line-height: 55px;
         text-decoration: none;
         letter-spacing: .3px;
+        box-sizing: border-box;
+        transition: .1s ease-in;
 
         @include smallPhone {
             width: 152px;
@@ -167,6 +169,11 @@
             font-size: 16px;
             line-height: 51px;
         }
+    }
+
+    &__button:hover {
+        border: solid 2px $secondTextColor;
+        border-radius: 10px;
     }
 
     &__headline {

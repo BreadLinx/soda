@@ -3,7 +3,6 @@
 @import './components/variables/color';
 @import './components/variables/displays';
 @import './components/mixins/adaptation';
-
 @import './blocks/body/_body.scss';
 @import './blocks/page/_page.scss';
 @import './blocks/lead/lead';
@@ -11,4 +10,6 @@
 @import './blocks/about/about';
 @import './blocks/description-card/description-card';
 @import './blocks/natural/natural';
-
+@import './blocks/semples/semples';
+@import './blocks/form/form';
+@import './blocks/footer/footer';

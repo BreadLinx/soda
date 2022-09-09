@@ -1,0 +1,89 @@
+.semples {
+    background-color: $secondElementsColor;
+    padding: 60px calc(50% - 720px) 60px calc(50% - 720px);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 90px;
+
+    @include tablet {
+        flex-direction: column;
+        padding-bottom: 34px;
+        padding-left: 34px;
+        padding-right: 34px;
+        gap: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    @media (max-width: 530px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include bigPhone {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    @include smallPhone {
+        padding: 20px 10px 10px 10px;
+        gap: 50px;
+    }
+
+    &__text-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 48px;
+        max-width: 457px;
+        margin-left: 150px;
+
+        @include desktop {
+            margin-left: 50px;
+        }
+
+        @include tablet {
+            margin-left: 0;
+            align-self: flex-start;
+        }
+
+        @include smallPhone {
+            align-self: center;
+            gap: 20px;
+            max-width: 240px;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 65px;
+        letter-spacing: .3px;
+        color: $secondTextColor;
+        margin: 0;
+
+        @include bigPhone {
+            font-size: 30px;
+            line-height: 34px;
+        }
+
+        @include smallPhone {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+        letter-spacing: .3px;
+        color: $secondTextColor;
+        margin: 0;
+
+        @include smallPhone {
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+}
