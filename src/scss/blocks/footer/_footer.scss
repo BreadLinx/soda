@@ -106,10 +106,16 @@
         font-size: 17px;
         line-height: 28px;
         letter-spacing: .3px;
+        opacity: 1;
+        transition: opacity .3s ease;
 
         @media (max-width: 610px) {
             text-align: center;
         }
+    }
+
+    &__nav-link:hover {
+        opacity: .7;
     }
 
     &__contacts-wrapper {

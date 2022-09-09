@@ -213,11 +213,18 @@
         position: absolute;
         bottom: 90px;
         left: 100px;
+        box-sizing: border-box;
+        transition: .1s ease-in;
 
         @include smallDesktop {
             position: static;
             bottom: unset;
             left: unset;
         }
+    }
+
+    &__button:hover {
+        border: solid 2px $secondTextColor;
+        border-radius: 10px;
     }
 }

@@ -104,6 +104,8 @@
         letter-spacing: .3px;
         color: $firstTextColor;
         cursor: pointer;
+        box-sizing: border-box;
+        transition: .1s ease-in;
 
         @include tablet {
             margin-top: 90px;
@@ -115,5 +117,10 @@
             height: 51px;
             font-size: 16px;
         }
+    }
+
+    &__button:hover {
+        border: solid 2px #E1FD2C;
+        border-radius: 10px;
     }
 }
