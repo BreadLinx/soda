@@ -1,3 +1,3 @@
-# Проект: Soda
+# Project: Soda
 
-Верстка и только. В проекте использовался флексбокс и позиционирование. Приятного пользования. Верстка на scss.
+Layout and only. The project used flexbox and positioning. Enjoy using. Layout on scss.
